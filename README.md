@@ -17,8 +17,6 @@ The dependencies for the progream are in requirements.txt file, following the in
 
 Instructions
 
-The entire code is in Tennis.ipynb. To execute, run upto cell "In [4]" (under 2. Examine the State and Action Spaces) sequentially, to load and examine the environment. You can explore the environment to see random actions being taken by executing the next cell. Then execute cells "In [6]" for setting model parameters, class definition (Agent, Noise, Replay Buffer, Actor, Critic NN model classes), build the ddpg agent, train the model and finally plot the results. At the end, if the model is solved the best weights are saved in checkpoint_actor.pth and checkpoint_critic.pth files, which can be loaded later for execution without additional training.
-
-There are two environment options to load and train the model (1) Single agent, vs. (2) multi-agent (20), by (un)commenting the appropriate lines in cell "In [2]".
+The entire code is in Tennis.ipynb. To execute, run upto cell "In [4]" (under 2. Examine the State and Action Spaces) sequentially, to load and examine the environment. You can explore the environment to see random actions being taken by executing the next cell. Then execute cells "In [19]" for setting model parameters, class definition (Agent, Noise, Replay Buffer, Multi_Agent, Actor, Critic NN model classes), build the ddpg agent, train the model and finally plot the results. At the end, if the model is solved the best weights are saved in checkpoint_actor_0.pth,  checkpoint_critic_0.pth, checkpoint_actor_1.pth,  checkpoint_critic_1.pth files, which can be loaded later for execution without additional training.
 
 Lastly, run the env.close() cell, when finished.
